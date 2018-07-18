@@ -1,0 +1,265 @@
+body {
+    font-family: "PT Sans", sans-serif;
+    background-color: #d5d4d6;
+}
+
+.header {
+    height: 60px;
+    background-color: rgb(255, 205, 40);
+    color: black;
+    font-size: larger;
+    padding: 5px 15px;
+}
+
+.header .h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+    font-size: 45px;
+    font-weight: bold;
+    margin-right: 20px;
+    width: 80%;
+}
+
+/***************************Navigation menu*********************************/
+form {
+    display: block;
+}
+
+.container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.ui {
+    position: relative;
+    max-width: 100%;
+}
+
+.wrapper {
+    background-color: rgb(255, 205, 40);
+    font-size: 15px;
+    padding: 5px 5px;
+    margin: 10px 0;
+}
+
+.menu_item {
+    box-sizing: border-box;
+    color: rgb(33, 34, 35);
+    display: block;
+}
+
+.box {
+    white-space: nowrap
+}
+
+.box div {
+    width: 15%;
+    display: inline-block;
+    border: 1px solid black
+}
+
+.box_inner {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.search-input {
+    font-size: 15px;
+    border: 1px solid #572955;
+    height: 40px;
+    width: 100%;
+    padding: 5px 10px;
+    vertical-align: bottom;
+    box-sizing: border-box;
+}
+
+.bttn {
+    color: white;
+    font-size: 15px;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border: 1px solid #572955;
+    height: 40px;
+    width: 100%;
+    padding: 5px 10px;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    background: #111111;
+    cursor: pointer;
+}
+
+.bttn a {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none; /*Убираем подчеркивание у ссылок*/
+}
+
+.bttn:hover {
+    border: none;
+    background: #9b9a9c;
+}
+
+/***************************Navigation menu*********************************/
+
+/***************************Resume Item*********************************/
+.resume_item {
+    display: flex;
+    background-color: #f4f3f5;
+    border: 1px solid #572955;
+    width: 890px;
+    height: 250px;
+    margin: 5px;
+}
+
+.resume_photo {
+    display: block;
+    position: relative;
+    padding: 15px;
+    height: 180px;
+    width: 140px;
+}
+
+.resume_photo img {
+    max-height: 100%;
+    max-width: 100%;
+    border: 1px solid #572955;;
+    border-radius: 5px;
+}
+
+
+.resume_text {
+    padding: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.resume_text_left {
+    width: 80%;
+}
+
+.resume_text_right {
+    width: 20%;
+}
+
+.resume_link {
+    color: rgb(0, 112, 224);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.resume_field {
+    display: block;
+    padding: 3px;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.edit_resume_button {
+    margin-top: 10px;
+    border: 1px solid #572955;
+    padding: 5px 10px;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    background: #FFCD28;
+    cursor: pointer;
+}
+
+.edit_resume_button:hover {
+    background: #9b9a9c;
+}
+
+.separator {
+    margin: 5px 0;
+}
+
+.heavy_font {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.thin_font {
+    color: rgb(144, 145, 146);
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.edit_resume_button a {
+    display: block;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none; /*Убираем подчеркивание у ссылок*/
+}
+
+/***************************Resume Item*********************************/
+
+#message_div {
+    display: none;
+    /*display: flex;*/
+    padding: 5px;
+    background-color: #9b9a9c;
+    width: 320px;
+    height: 100px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 10px;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center;     /*Центрирование по вертикали */
+}
+
+
+#message_text{
+    /*display: block;*/
+    display: none;
+    color: black;
+    font-size: 20px;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    vertical-align: middle;
+    text-align: center;
+    margin: 5px;
+
+}
+
+.loading_box{
+    display: block;
+    margin-top: 15px;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center;     /*Центрирование по вертикали */
+}
+
+.loading_gif{
+    display: block;
+    position: relative;
+    max-width: 50px;
+}
+
+.loading_text{
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    vertical-align: middle;
+    text-align: center;
+    margin: 5px;
+    width:80%;
+    height: 50px;
+}
+
+.loading_gif {
+    text-align: center;
+}
+
+.loading_gif img{
+    max-height: 100%;
+    max-width: 100%;
+}
